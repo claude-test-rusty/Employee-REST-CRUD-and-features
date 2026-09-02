@@ -50,7 +50,7 @@ public class ClaudeTestController {
 
     @GetMapping("/test")
     public String test() {
-        int unused = 42;
+        int x = 42;
         return "test";
     }
 
