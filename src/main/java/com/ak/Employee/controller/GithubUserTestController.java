@@ -1,0 +1,15 @@
+package com.ak.Employee.controller;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class GithubUserTestController {
+
+    @GetMapping("/idempotency-test")
+    public String test() {
+        String githubNAme = "This intentionally creates a PMD finding";
+        return "Idempotency test";
+    }
+
+}
