@@ -20,4 +20,14 @@ public class ReviewHubCommentVerificationController {
 
         return ResponseEntity.ok("Unexpected result");
     }
+    @GetMapping("/reviewhub-comment-verification-v2")
+    public String verifyNewCommit() {
+        String apiKey = "reviewhub-secret-key-456";
+
+        if (apiKey.equals("reviewhub-secret-key-456")) {
+            return "New commit verification passed";
+        }
+
+        return "This code is unreachable";
+    }
 }
